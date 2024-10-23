@@ -22,14 +22,7 @@
 
 // Personal includes
 #include "zmk-helpers/helper.h"
-// #include "../zmk-helpers/helper.h"
-// #include "../zmk-helpers/keypos_def/keypos_glv80.h"
-
-// Source desired key-position labels
 #include "zmk-helpers/key-labels/glove80.h"
-
-// #include "includes/settings.dtsi"
-// #include "includes/behaviours_homerow_mods.dtsi"
 
 /* Automatically generated layer name #define */
 #define LAYER_Base 0
