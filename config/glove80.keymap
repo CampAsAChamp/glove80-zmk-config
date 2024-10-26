@@ -226,7 +226,7 @@ ZMK_HOLD_TAP(hm_r,
         compatible = "zmk,keymap";
 
 
-        layer_Base {
+        BASE_LAYER {
             bindings = <
     &kp F1       &kp F2      &kp F3      &kp F4       &kp F5                                                                                               &kp F6       &kp F7      &kp F8          &kp F9    &kp F10
  &kp MINUS       &kp N1      &kp N2      &kp N3       &kp N4  &kp N5                                                                          &kp N6       &kp N7       &kp N8      &kp N9          &kp N0  &kp EQUAL
@@ -237,7 +237,7 @@ ZMK_HOLD_TAP(hm_r,
             >;
         };
 
-        layer_Symbol {
+        SYMBOL_LAYER {
             bindings = <
  &trans       &trans  &trans  &trans  &trans                                                                             &trans    &trans     &trans       &trans     &trans
  &trans       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                                          &kp F6     &kp F7    &kp F8     &kp F9      &kp F10     &trans
@@ -248,7 +248,7 @@ ZMK_HOLD_TAP(hm_r,
             >;
         };
 
-        mAGIC_LAYER {
+        MAGIC_LAYER {
             bindings = <
  &bootloader            &none            &none            &none            &none                                                                                              &none   &none   &none   &none  &bootloader
        &none            &none            &none            &none            &none            &none                                                                     &none   &none   &none   &none   &none        &none
@@ -259,7 +259,7 @@ ZMK_HOLD_TAP(hm_r,
             >;
         };
 
-        nUMBER_LAYER {
+        NUMBER_LAYER {
             bindings = <
  &trans  &trans  &trans  &trans  &trans                                                                                     &trans        &trans        &trans           &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                                                   &kp LEFT_PARENTHESIS  &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &trans
@@ -270,7 +270,7 @@ ZMK_HOLD_TAP(hm_r,
             >;
         };
 
-        mEDIA_LAYER {
+        MEDIA_LAYER {
             bindings = <
  &trans  &trans      &trans        &trans        &trans                                                                  &trans  &trans  &trans  &trans  &trans
  &trans  &trans      &trans        &trans        &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
