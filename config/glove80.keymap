@@ -19,12 +19,12 @@
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
-#define LAYER_Lower 0
+    #define LAYER_Lower 0
 #endif
 
 // HYPER and MEH
-#define MY_HYPER LS(LC(LG(LALT)))
-#define MY_MEH LC(LG(LALT))
+#define HYPER LS(LC(LG(LALT)))
+#define MEH LC(LG(LALT))
 
 // Homerow Mods
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
