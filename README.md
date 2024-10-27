@@ -1,6 +1,6 @@
 # Nick's Glove 80 ZMK config
 
-![My Keymap](imgs/my_keymap.svg)
+![My Keymap](keymap_drawer/glove80.svg)
 
 ## Features
 - URob's Timeless Homerow Mods
