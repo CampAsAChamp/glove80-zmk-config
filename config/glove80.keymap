@@ -217,6 +217,7 @@ ZMK_HOLD_TAP(hm_r,
 / {
     combos {
     compatible = "zmk,combos";
+    };
 };
 
 /* Automatically generated keymap */
