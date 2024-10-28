@@ -217,11 +217,6 @@ ZMK_HOLD_TAP(hm_r,
 / {
     combos {
     compatible = "zmk,combos";
-    hyperkey: hyper {
-            timeout-ms = <30>;
-            bindings = <&kp LCTRL>, <&kp LALT>, <&kp LSHIFT>, <&kp LGUI>;
-        };
-    };
 };
 
 /* Automatically generated keymap */
