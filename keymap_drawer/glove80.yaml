@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - UP
+  - $$mdi:arrow-up-thick$$
   - END
   - '}'
   - {t: ▽, type: trans}
@@ -123,9 +123,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - $$mdi:arrow-left-thick$$
+  - $$mdi:arrow-down-thick$$
+  - $$mdi:arrow-right-thick$$
   - KP RPAR
   - '`'
   - {t: ▽, type: trans}

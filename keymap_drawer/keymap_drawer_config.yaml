@@ -6,7 +6,7 @@ draw_config:
   combo_h: 26.0
   key_rx: 6.0
   key_ry: 6.0
-  dark_mode: true
+  dark_mode: false
   n_columns: 1
   separate_combo_diagrams: false
   combo_diagrams_scale: 2
@@ -196,13 +196,6 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    UP: $$mdi:arrow-up-thick$$
-    DOWN: $$mdi:arrow-down-thick$$
-    LEFT: $$mdi:arrow-left-thick$$
-    RIGHT: $$mdi:arrow-right-thick$$
-    C_MUTE: $$mdi:volume-mute$$
-    C_VOL_UP: $$mdi:volume-plus$$
-    C_VOL_DN: $$mdi:volume-minus$$
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
