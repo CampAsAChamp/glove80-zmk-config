@@ -1,0 +1,6 @@
+layout = "moergo:glove80" # required
+
+[options]
+separate_sections = true # print newline between sections
+indent_size = 4
+tabs = false
