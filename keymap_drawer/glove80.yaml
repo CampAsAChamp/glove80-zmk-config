@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: glove80}
 layers:
-  '0':
+  Base:
   - F1
   - F2
   - F3
@@ -56,7 +56,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:minus-thick$$', type: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&rgb_ug_status_macro', h: '2'}
+  - {t: '&rgb_ug_status_macro', h: Magic}
   - {t: ▽, type: trans}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:minus-thick$$', type: sticky}
   - N
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '1':
+  Symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -162,7 +162,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
+  Magic:
   - $$mdi:usb-flash-drive$$
   - ''
   - ''
@@ -243,7 +243,7 @@ layers:
   - ''
   - ''
   - ''
-  '3':
+  Num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -298,7 +298,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '0', h: toggle}
+  - {t: Base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,7 +324,7 @@ layers:
   - $$mdi:circle-small$$
   - $$mdi:keyboard-return$$
   - {t: ▽, type: trans}
-  '4':
+  Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
