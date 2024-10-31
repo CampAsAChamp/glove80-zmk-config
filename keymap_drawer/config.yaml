@@ -32,14 +32,104 @@ draw_config:
   footer_text: ''
   shrink_wide_legends: 7
   style_layer_activators: true
-  glyph_tap_size: 14
-  glyph_hold_size: 12
+  glyph_tap_size: 18
+  glyph_hold_size: 14
   glyph_shifted_size: 10
   glyphs: {}
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {}
+  raw_binding_map:
+    # Layers
+    '&lt SYMBOL_LAYER C':
+      tap: C
+      hold: $$mdi:symbol$$
+    '&lt SYMBOL_LAYER COMMA':
+      tap: ','
+      hold: $$mdi:symbol$$
+    '&lt SYMBOL_LAYER SPACE':
+      tap: $$mdi:keyboard-space$$
+      hold: $$mdi:symbol$$
+    '&mo MEDIA_LAYER':
+      tap: $$mdi:layers$$
+      hold: $$mdi:play-pause$$
+    # Sticky Keys
+    '&sk LSHIFT':
+      tap: $$mdi:apple-keyboard-shift$$
+      hold: $$mdi:minus-thick$$
+      type: sticky
+    '&sk RSHIFT':
+      tap: $$mdi:apple-keyboard-shift$$
+      hold: $$mdi:minus-thick$$
+      type: sticky
+    # Bluetooth
+    '&bt_0':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '0'
+      type: sym_sub_text
+    '&bt_1':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '1'
+      type: sym_sub_text
+    '&bt_2':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '2'
+      type: sym_sub_text
+    '&bt_3':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '3'
+      type: sym_sub_text
+    '&bt_4':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '4'
+      type: sym_sub_text
+    '&bt BT_CLR':
+      tap: $$mdi:bluetooth-settings$$
+      shifted: $$mdi:close-thick$$
+      type: sym_sub_text
+    '&bt BT_CLR_ALL':
+      tap: $$mdi:bluetooth-settings$$
+      shifted: $$mdi:close-thick$$
+      hold: $$mdi:arrow-expand-all$$
+      type: sym_sub_text
+    '&bootloader':
+      tap: $$mdi:usb-flash-drive$$
+    '&out OUT_USB':
+      tap: $$mdi:usb-port$$
+    '&caps_word':
+      tap: $$mdi:caps-lock$$
+    '&rgb_ug_status_macro':
+      tap: $$auto-fix$$
+      hold: $$mdi:arrow-expand-all$$
+    '&rgb_ug RGB_TOG':
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:led-on$$
+      shifted: $$mdi:led-outline$$
+      type: toggle
+    '&rgb_ug RGB_BRI':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:white-balance-sunny$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_SAI':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:eyedropper$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_HUI':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:palette$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_BRD':
+      tap:     $$mdi:led-outline$$
+      shifted: $$mdi:white-balance-sunny$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_SAD':
+      tap:     $$mdi:led-outline$$
+      shifted: $$mdi:eyedropper$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_HUD':
+      tap:     $$mdi:led-outline$$
+      shifted: $$mdi:palette$$
+      type:    sym_by_sym
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -200,9 +290,52 @@ parse_config:
     DOWN: $$mdi:arrow-down-thick$$
     LEFT: $$mdi:arrow-left-thick$$
     RIGHT: $$mdi:arrow-right-thick$$
-    C_MUTE: $$mdi:volume-mute$$
-    C_VOL_UP: $$mdi:volume-plus$$
-    C_VOL_DN: $$mdi:volume-minus$$
+    K_VOL_UP: $$mdi:volume-plus$$
+    K_VOL_DN: $$mdi:volume-minus$$
+    K_PREV: $$mdi:skip-previous$$
+    K_PP: $$mdi:play-pause$$
+    K_NEXT: $$mdi:skip-next$$
+    KP_N0: '0'
+    KP_N1: '1'
+    KP_N2: '2'
+    KP_N3: '3'
+    KP_N4: '4'
+    KP_N5: '5'
+    KP_N6: '6'
+    KP_N7: '7'
+    KP_N8: '8'
+    KP_N9: '9'
+    KP_NUM: $$mdi:numeric$$
+    KP_EQUAL: $$mdi:equal$$
+    KP_SLASH: $$mdi:slash-forward$$
+    KP_MULTIPLY: $$mdi:multiplication$$
+    KP_PLUS: $$mdi:plus$$
+    KP_MINUS: $$mdi:minus$$
+    KP_ENTER: $$mdi:keyboard-return$$
+    KP_DOT: $$mdi:circle-small$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+    RET: $$mdi:keyboard-return$$
+    BSPC: $$mdi:backspace$$
+    DEL: $$mdi:backspace-reverse$$
+    SPACE: $$mdi:keyboard-space$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    HYPER: $$mdi:star-four-points$$
+    # Hyper 👇
+    LS(LC(LG(LALT))): $$mdi:star-four-points$$
+    # Meh 👇
+    LC(LG(LALT)): $$mdi:star-three-points-outline$$
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []

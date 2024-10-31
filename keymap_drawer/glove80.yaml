@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: glove80}
 layers:
-  '0':
+  Base:
   - F1
   - F2
   - F3
@@ -23,7 +23,7 @@ layers:
   - '9'
   - '0'
   - '='
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -35,53 +35,53 @@ layers:
   - O
   - P
   - \
-  - {t: ESC, s: '`'}
-  - {t: A, h: LCTRL}
-  - {t: S, h: LALT}
-  - {t: D, h: LGUI}
-  - {t: F, h: LSHFT}
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: RSHFT}
-  - {t: K, h: LGUI}
-  - {t: L, h: LALT}
-  - {t: ;, h: LCTRL}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
   - ''''
   - '`'
   - Z
   - X
-  - {t: C, h: '1'}
+  - {t: C, h: '$$mdi:symbol$$'}
   - V
   - B
-  - {t: LSHIFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:minus-thick$$', type: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&rgb_ug_status_macro', h: '2'}
+  - {t: '&rgb_ug_status_macro', h: Magic}
   - {t: ▽, type: trans}
-  - {t: RSHIFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:minus-thick$$', type: sticky}
   - N
   - M
-  - {t: ',', h: '1'}
+  - {t: ',', h: '$$mdi:symbol$$'}
   - .
   - /
   - '`'
-  - Sft+Ctl+Gui+ LALT
-  - Ctl+Gui+ LALT
+  - $$mdi:star-four-points$$
+  - $$mdi:star-three-points-outline$$
   - {t: ▽, type: trans}
-  - '4'
+  - {t: '$$mdi:layers$$', h: '$$mdi:play-pause$$'}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: '1'}
-  - DEL
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
+  - $$mdi:backspace-reverse$$
   - {t: ▽, type: trans}
-  - '&caps_word'
-  - RET
-  - BSPC
+  - $$mdi:caps-lock$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:backspace$$
   - {t: ▽, type: trans}
-  - '4'
+  - {t: '$$mdi:layers$$', h: '$$mdi:play-pause$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '1':
+  Symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -112,26 +112,25 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - UP
+  - $$mdi:arrow-up-thick$$
   - END
   - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP LPAR
+  - (
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - KP RPAR
+  - $$mdi:arrow-left-thick$$
+  - $$mdi:arrow-down-thick$$
+  - $$mdi:arrow-right-thick$$
+  - )
   - '`'
   - {t: ▽, type: trans}
   - '['
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,7 +139,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP MINUS
+  - {t: ▽, type: trans}
+  - $$mdi:minus$$
   - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,16 +154,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
-  - '&bootloader'
+  Magic:
+  - $$mdi:usb-flash-drive$$
   - ''
   - ''
   - ''
@@ -172,7 +172,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&bootloader'
+  - $$mdi:usb-flash-drive$$
   - ''
   - ''
   - ''
@@ -187,10 +187,10 @@ layers:
   - ''
   - ''
   - RGB SPI
-  - RGB SAI
-  - RGB HUI
-  - RGB BRI
-  - RGB TOG
+  - {t: '$$mdi:led-on$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', s: '$$mdi:white-balance-sunny$$', type: sym_by_sym}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:led-on$$', s: '$$mdi:led-outline$$', type: toggle}
   - ''
   - ''
   - ''
@@ -199,9 +199,9 @@ layers:
   - ''
   - ''
   - RGB SPD
-  - RGB SAD
-  - RGB HUD
-  - RGB BRD
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:white-balance-sunny$$', type: sym_by_sym}
   - RGB EFF
   - ''
   - ''
@@ -215,13 +215,11 @@ layers:
   - ''
   - ''
   - ''
-  - '&bt_2'
-  - '&bt_3'
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
   - ''
-  - {t: BT CLR, type: held}
-  - BT CLR ALL
-  - ''
-  - ''
+  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: held}
+  - {t: '$$mdi:bluetooth-settings$$', h: '$$mdi:arrow-expand-all$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
   - ''
   - ''
   - ''
@@ -232,9 +230,11 @@ layers:
   - ''
   - ''
   - ''
-  - '&bt_0'
-  - '&bt_1'
-  - OUT USB
+  - ''
+  - ''
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - $$mdi:usb-port$$
   - ''
   - ''
   - ''
@@ -243,7 +243,7 @@ layers:
   - ''
   - ''
   - ''
-  '3':
+  Num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -261,10 +261,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - (
-  - KP NUM
-  - KP EQUAL
-  - KP SLASH
-  - KP MULTIPLY
+  - $$mdi:numeric$$
+  - $$mdi:equal$$
+  - $$mdi:slash-forward$$
+  - $$mdi:multiplication$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -273,10 +273,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - )
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
+  - '7'
+  - '8'
+  - '9'
+  - $$mdi:minus$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -285,10 +285,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '%'
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
+  - '4'
+  - '5'
+  - '6'
+  - $$mdi:plus$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -298,15 +298,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '0', h: toggle}
+  - {t: Base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ','
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP ENTER
+  - '1'
+  - '2'
+  - '3'
+  - $$mdi:keyboard-return$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -319,12 +319,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 0
-  - KP 0
-  - KP DOT
-  - KP ENTER
+  - '0'
+  - '0'
+  - $$mdi:circle-small$$
+  - $$mdi:keyboard-return$$
   - {t: ▽, type: trans}
-  '4':
+  Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -349,9 +349,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
-  - PP
-  - NEXT
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -362,8 +362,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOL DN
-  - VOL UP
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -392,7 +392,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
