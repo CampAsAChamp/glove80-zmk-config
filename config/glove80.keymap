@@ -31,6 +31,14 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
 #define KEYS_T LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
 
+/*
+For when you try implementing homerow mods later, dialing in the settings for them is really important. 
+I've tried and given up on them before without properly setting the timing and per-key permissive hold options, but this most recent time I've messed with that and now it feels pretty natural. 
+If you're accidentally triggering modifiers when typing, you need to lengthen your timing. 
+If you're accidentally typing letters when you're trying to trigger commands, or if commands don't feel snappy, try permissive holds/related options on those keys, or shorten your timing, or both. 
+They shouldn't affect your normal typing, and doing commands on them should feel relatively snappy once you get used to them.
+*/
+
 ZMK_HOLD_TAP(hm_l,
     flavor = "balanced";
     tapping-term-ms = <280>;
