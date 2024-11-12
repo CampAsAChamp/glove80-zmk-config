@@ -19,4 +19,4 @@ jobs:
       parse_args: "--layer-names Base Symbols Magic Num Media"  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
       amend_commit: true # To ammend the commit message of adding a new drawing or to make a separate one
-      fail_on_error: true # Fail the action if an error occurs during parse/draw
+      fail_on_error: false # Fail the action if an error occurs during parse/draw
