@@ -292,9 +292,9 @@ parse_config:
     RIGHT: $$mdi:arrow-right-thick$$
     K_VOL_UP: $$mdi:volume-plus$$
     K_VOL_DN: $$mdi:volume-minus$$
-    K_PREV: $$mdi:skip-previous$$
-    K_PP: $$mdi:play-pause$$
-    K_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PLAY_PAUSE: $$mdi:play-pause$$
+    C_NEXT: $$mdi:skip-next$$
     KP_N0: '0'
     KP_N1: '1'
     KP_N2: '2'
