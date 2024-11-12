@@ -72,7 +72,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - $$mdi:backspace-reverse$$
-  - {t: ▽, type: trans}
+  - Gui+ $$mdi:keyboard-space$$
   - $$mdi:caps-lock$$
   - $$mdi:keyboard-return$$
   - $$mdi:backspace$$
@@ -130,10 +130,10 @@ layers:
   - '`'
   - {t: ▽, type: trans}
   - '['
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
+  - Gui+ B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

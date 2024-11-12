@@ -204,7 +204,7 @@ ZMK_HOLD_TAP(hm_r,
         &kp TAB     &kp Q           &kp W          &kp E                &kp R           &kp T                                                                                                       &kp Y    &kp U           &kp I                    &kp O          &kp P              &kp BSLH
         &gresc      &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D         &hm_l LSHFT F   &kp G                                                                                                       &kp H    &hm_r RSHFT J   &hm_r LGUI K             &hm_r LALT L   &hm_r LCTRL SEMI   &kp SQT
         &kp GRAVE   &kp Z           &kp X          &lt SYMBOL_LAYER C   &kp V           &kp B    &sk LSHIFT               &trans    &trans   &magic MAGIC_LAYER BASE_LAYER   &trans    &sk RSHIFT   &kp N    &kp M           &lt SYMBOL_LAYER COMMA   &kp DOT        &kp FSLH           &kp GRAVE
-        &kp HYPER   &kp MEH         &trans         &mo MEDIA_LAYER      &trans                   &lt SYMBOL_LAYER SPACE   &kp DEL   &trans   &caps_word                      &kp RET   &kp BSPC              &trans          &mo MEDIA_LAYER          &trans         &trans             &sk RGUI
+        &kp HYPER   &kp MEH         &trans         &mo MEDIA_LAYER      &trans                   &lt SYMBOL_LAYER SPACE   &kp DEL   &kp LG(SPACE)   &caps_word                      &kp RET   &kp BSPC              &trans          &mo MEDIA_LAYER          &trans         &trans             &sk RGUI
             >;
         };
         SYMBOL_LAYER {
@@ -213,7 +213,7 @@ ZMK_HOLD_TAP(hm_r,
         &trans   &kp F1     &kp F2   &kp F3   &kp F4   &kp F5                                                           &kp F6         &kp F7      &kp F8     &kp F9      &kp F10    &trans
         &trans   &kp LBRC   &trans   &trans   &trans   &trans                                                           &trans         &kp HOME    &kp UP     &kp END     &kp RBRC   &trans
         &trans   &kp LPAR   &trans   &trans   &trans   &trans                                                           &trans         &kp LEFT    &kp DOWN   &kp RIGHT   &kp RPAR   &kp GRAVE
-        &trans   &kp LBKT   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &kp KP_MINUS   &kp UNDER   &trans     &trans      &kp RBKT   &trans
+        &trans   &kp LBKT   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)   &trans   &trans   &trans   &trans     &trans   &trans   &kp KP_MINUS   &kp UNDER   &trans     &trans      &kp RBKT   &trans
         &trans   &trans     &trans   &trans   &trans            &trans   &trans   &trans   &kp CAPS   &trans   &trans                  &trans      &trans     &trans      &trans     &trans
             >;
         };
