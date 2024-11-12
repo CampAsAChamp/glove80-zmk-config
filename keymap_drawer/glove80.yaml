@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:layers$$', h: '$$mdi:play-pause$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
