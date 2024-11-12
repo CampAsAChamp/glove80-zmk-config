@@ -57,7 +57,27 @@ ZMK_HOLD_TAP(hm_r,
     bindings = <&kp>, <&kp>;
 )
 
-/* Glove80 system behavior & macros */
+/* Custom Defined Behaviors */
+/ {
+};
+
+&sk {
+    quick-release;
+};
+
+/* Automatically generated macro definitions */
+/ {
+    macros {
+    };
+};
+
+/* Automatically generated combos definitions */
+/ {
+    combos {
+        compatible = "zmk,combos";
+    };
+};
+
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -68,6 +88,15 @@ ZMK_HOLD_TAP(hm_r,
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LAYER_Lower>, <&to LAYER_Lower>;
+        };
+
+        magic: magic {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MAGIC_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&rgb_ug_status_macro>;
         };
     };
 };
@@ -173,41 +202,6 @@ ZMK_HOLD_TAP(hm_r,
 #endif
 };
 
-/ {
-    behaviors {
-        magic: magic {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MAGIC_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&rgb_ug_status_macro>;
-        };
-    };
-};
-
-/* Custom Defined Behaviors */
-/ {
-};
-
-/* Automatically generated macro definitions */
-/ {
-    macros {
-    };
-};
-
-/* Automatically generated behavior definitions */
-/ {
-    behaviors {
-    };
-};
-
-/* Automatically generated combos definitions */
-/ {
-    combos {
-    compatible = "zmk,combos";
-    };
-};
 
 /* Automatically generated keymap */
 / {
