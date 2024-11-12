@@ -57,24 +57,25 @@ ZMK_HOLD_TAP(hm_r,
     bindings = <&kp>, <&kp>;
 )
 
-/* Custom Defined Behaviors */
-/ {
-};
-
 &sk {
     quick-release;
-};
-
-/* Automatically generated macro definitions */
-/ {
-    macros {
-    };
 };
 
 /* Automatically generated combos definitions */
 / {
     combos {
         compatible = "zmk,combos";
+    };
+};
+
+/ {
+    macros {
+        rgb_ug_status_macro: rgb_ug_status_macro {
+            label = "RGB_UG_STATUS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_STATUS>;
+        };
     };
 };
 
@@ -100,18 +101,6 @@ ZMK_HOLD_TAP(hm_r,
         };
     };
 };
-
-/ {
-    macros {
-        rgb_ug_status_macro: rgb_ug_status_macro {
-            label = "RGB_UG_STATUS";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_STATUS>;
-        };
-    };
-};
-
 
 / {
 #ifdef BT_DISC_CMD
