@@ -72,15 +72,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
   - $$mdi:backspace-reverse$$
-  - {t: ▽, type: trans}
+  - Gui+ $$mdi:keyboard-space$$
   - $$mdi:caps-lock$$
-  - $$mdi:keyboard-return$$
+  - ''
   - $$mdi:backspace$$
   - {t: ▽, type: trans}
   - {t: '$$mdi:layers$$', h: '$$mdi:play-pause$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,10 +130,10 @@ layers:
   - '`'
   - {t: ▽, type: trans}
   - '['
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
+  - Gui+ B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
