@@ -100,7 +100,7 @@ ZMK_HOLD_TAP(hm_r,
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        td0: tap_dance_0 {
+        td_caps: td_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -210,7 +210,7 @@ ZMK_HOLD_TAP(hm_r,
         &kp MINUS   &kp N1          &kp N2         &kp N3               &kp N4          &kp N5                                                                                                      &kp N6   &kp N7          &kp N8                   &kp N9         &kp N0             &kp EQUAL
         &kp TAB     &kp Q           &kp W          &kp E                &kp R           &kp T                                                                                                       &kp Y    &kp U           &kp I                    &kp O          &kp P              &kp BSLH
         &gresc      &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D         &hm_l LSHFT F   &kp G                                                                                                       &kp H    &hm_r RSHFT J   &hm_r LGUI K             &hm_r LALT L   &hm_r LCTRL SEMI   &kp SQT
-        &kp GRAVE   &kp Z           &kp X          &lt SYMBOL_LAYER C   &kp V           &kp B    &sk LSHIFT               &trans    &trans   &magic MAGIC_LAYER BASE_LAYER   &trans    &td0   &kp N    &kp M           &lt SYMBOL_LAYER COMMA   &kp DOT        &kp FSLH           &kp GRAVE
+        &kp GRAVE   &kp Z           &kp X          &lt SYMBOL_LAYER C   &kp V           &kp B    &td_caps              &trans    &trans   &magic MAGIC_LAYER BASE_LAYER   &trans    &td_caps   &kp N    &kp M           &lt SYMBOL_LAYER COMMA   &kp DOT        &kp FSLH           &kp GRAVE
         &kp HYPER   &kp MEH         &trans         &mo MEDIA_LAYER      &trans                   &lt SYMBOL_LAYER SPACE   &kp DEL   &kp LG(SPACE)   &caps_word                      &kp RET   &kp BSPC              &trans          &mo MEDIA_LAYER          &trans         &trans             &sk RGUI
             >;
         };
