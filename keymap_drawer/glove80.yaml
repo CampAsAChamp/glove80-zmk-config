@@ -58,7 +58,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: '&rgb_ug_status_macro', h: '2'}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:minus-thick$$', type: sticky}
+  - '&td0'
   - N
   - M
   - {t: ',', h: '$$mdi:symbol$$'}
