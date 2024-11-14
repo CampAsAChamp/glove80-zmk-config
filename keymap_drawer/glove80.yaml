@@ -361,8 +361,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - $$mdi:volume-minus$$
+  - {t: ▽, type: trans}
   - $$mdi:volume-plus$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
