@@ -103,7 +103,7 @@ ZMK_HOLD_TAP(hm_r,
         td_caps: td_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&sk RSHIFT>, <&caps_word>, <&kp CAPS>;
         };
     };
