@@ -221,7 +221,7 @@ ZMK_HOLD_TAP(hm_r,
         &trans   &kp LBRC   &trans   &trans   &trans   &trans                                                           &trans         &kp HOME    &kp UP     &kp END     &kp RBRC   &trans
         &trans   &kp LPAR   &trans   &trans   &trans   &trans                                                           &trans         &kp LEFT    &kp DOWN   &kp RIGHT   &kp RPAR   &kp GRAVE
         &trans   &kp LBKT   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)   &trans   &trans   &trans   &trans     &trans   &trans   &kp KP_MINUS   &kp UNDER   &trans     &trans      &kp RBKT   &trans
-        &trans   &trans     &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans   &trans                  &trans      &trans     &trans      &trans     &trans
+        &trans   &trans     &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans   &kp DEL                  &trans      &trans     &trans      &trans     &trans
             >;
         };
         MAGIC_LAYER {
