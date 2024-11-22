@@ -47,7 +47,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
   - ''''
-  - '`'
+  - '&td_caps'
   - Z
   - X
   - {t: C, h: '$$mdi:symbol$$'}
@@ -64,7 +64,7 @@ layers:
   - {t: ',', h: '$$mdi:symbol$$'}
   - .
   - /
-  - '`'
+  - '&td_caps'
   - $$mdi:star-four-points$$
   - Sft+Ctl+ $$mdi:apple-keyboard-option$$
   - {t: ▽, type: trans}
