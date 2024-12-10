@@ -80,6 +80,7 @@ ZMK_HOLD_TAP(hm_r,
         tilde_slash: tilde_slash {
             compatible = "zmk,behavior-macro";
             label = "Tilde Slash";
+            #binding-cells = <0>;
             bindings = <&kp TILDE &kp SLASH>;
         };
     };
