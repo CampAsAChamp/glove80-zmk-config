@@ -13,9 +13,9 @@
 /* Automatically generated layer name #define */
 #define BASE_LAYER 0
 #define SYMBOL_LAYER 1
-#define MAGIC_LAYER 2
-#define NUMBER_LAYER 3
-#define MEDIA_LAYER 4
+#define NUMBER_LAYER 2
+#define MEDIA_LAYER 3
+#define MAGIC_LAYER 4
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
@@ -71,10 +71,16 @@ ZMK_HOLD_TAP(hm_r,
 / {
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro {
-            label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
+            label = "RGB_UG_STATUS";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_STATUS>;
+        };
+
+        tilde_slash: tilde_slash {
+            compatible = "zmk,behavior-macro";
+            label = "Tilde Slash";
+            bindings = <&kp TILDE &kp SLASH>;
         };
     };
 };
@@ -209,29 +215,19 @@ ZMK_HOLD_TAP(hm_r,
         &kp F1      &kp F2          &kp F3         &kp F4               &kp F5                                                                                                                               &kp F6          &kp F7                   &kp F8         &kp F9             &kp F10
         &kp MINUS   &kp N1          &kp N2         &kp N3               &kp N4          &kp N5                                                                                                      &kp N6   &kp N7          &kp N8                   &kp N9         &kp N0             &kp EQUAL
         &kp TAB     &kp Q           &kp W          &kp E                &kp R           &kp T                                                                                                       &kp Y    &kp U           &kp I                    &kp O          &kp P              &kp BSLH
-        &gresc      &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D         &hm_l LSHFT F   &kp G                                                                                                       &kp H    &hm_r RSHFT J   &hm_r LGUI K             &hm_r LALT L   &hm_r LCTRL SEMI   &kp SQT
-        &td_caps   &kp Z           &kp X          &lt SYMBOL_LAYER C   &kp V           &kp B    &kp LG(SPACE)               &trans     &trans   &magic MAGIC_LAYER BASE_LAYER   &trans    &td_caps   &kp N    &kp M           &lt SYMBOL_LAYER COMMA   &kp DOT        &kp FSLH           &td_caps
-        &kp HYPER   &kp MEH         &trans         &mo MEDIA_LAYER      &trans                   &lt SYMBOL_LAYER SPACE   &kp DEL   &kp LG(SPACE)   &trans                      &kp RET   &kp BSPC              &trans          &mo MEDIA_LAYER          &trans         &trans             &sk RGUI
+        &lt MEDIA_LAYER ESC      &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D         &hm_l LSHFT F   &kp G                                                                                                       &kp H    &hm_r RSHFT J   &hm_r LGUI K             &hm_r LALT L   &hm_r LCTRL SEMI   &kp SQT
+        &td_caps    &kp Z           &kp X          &kp C                &kp V           &kp B    &kp LG(SPACE)               &trans     &trans   &magic MAGIC_LAYER BASE_LAYER   &trans    &td_caps   &kp N    &kp M           &lt SYMBOL_LAYER COMMA   &kp DOT        &kp FSLH           &td_caps
+        &kp MEH     &kp HYPER       &trans         &mo MEDIA_LAYER      &sl SYMBOL_LAYER                   &lt SYMBOL_LAYER SPACE   &kp DEL   &kp LG(SPACE)   &trans                      &kp RET   &kp BSPC              &kp LPAR          &kp RPAR          &kp LBKT         &kp RBKT             &sk RGUI
             >;
         };
         SYMBOL_LAYER {
             bindings = <
         &trans   &trans     &trans   &trans   &trans                                                                                   &trans      &trans     &trans      &trans     &trans
         &trans   &kp F1     &kp F2   &kp F3   &kp F4   &kp F5                                                           &kp F6         &kp F7      &kp F8     &kp F9      &kp F10    &trans
-        &trans   &kp LBRC   &trans   &trans   &trans   &trans                                                           &trans         &kp HOME    &kp UP     &kp END     &kp RBRC   &trans
-        &trans   &kp LPAR   &trans   &trans   &trans   &trans                                                           &trans         &kp LEFT    &kp DOWN   &kp RIGHT   &kp RPAR   &kp GRAVE
-        &trans   &kp LBKT   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)   &trans   &trans   &trans   &trans     &trans   &trans   &kp KP_MINUS   &kp UNDER   &trans     &trans      &kp RBKT   &trans
-        &trans   &trans     &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans   &kp DEL                  &trans      &trans     &trans      &trans     &trans
-            >;
-        };
-        MAGIC_LAYER {
-            bindings = <
-        &bootloader   &none             &none             &none             &none                                                                                                            &none   &none   &none   &none   &bootloader
-        &none         &none             &none             &none             &none             &none                                                                                  &none   &none   &none   &none   &none   &none
-        &none         &rgb_ug RGB_SPI   &rgb_ug RGB_SAI   &rgb_ug RGB_HUI   &rgb_ug RGB_BRI   &rgb_ug RGB_TOG                                                                        &none   &none   &none   &none   &none   &none
-        &none         &rgb_ug RGB_SPD   &rgb_ug RGB_SAD   &rgb_ug RGB_HUD   &rgb_ug RGB_BRD   &rgb_ug RGB_EFF                                                                        &none   &none   &none   &none   &none   &none
-        &none         &none             &none             &none             &none             &none             &bt_2   &bt_3   &none          &bt BT_CLR   &bt BT_CLR_ALL   &none   &none   &none   &none   &none   &none   &none
-        &none         &none             &none             &none             &none                               &bt_0   &bt_1   &out OUT_USB   &none        &none            &none           &none   &none   &none   &none   &none
+        &kp LG(TAB)   &trans   &trans   &trans   &trans   &trans                                                           &trans         &kp HOME    &kp UP     &kp END     &trans   &trans
+        &trans   &trans   &trans   &trans   &trans   &trans                                                           &trans         &kp LEFT    &kp DOWN   &kp RIGHT   &kp COLON   &kp GRAVE
+        &kp LG(GRAVE)    &trans   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)   &trans   &trans   &trans   &trans     &trans   &trans   &kp KP_MINUS   &kp UNDER   &trans     &trans      &tilde_slash   &trans
+        &trans   &trans     &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans   &kp LA(BSPC)                   &trans      &trans     &trans      &trans     &trans
             >;
         };
         NUMBER_LAYER {
@@ -248,10 +244,20 @@ ZMK_HOLD_TAP(hm_r,
             bindings = <
         &trans   &trans   &trans       &trans         &trans                                                                                 &trans   &trans   &trans   &trans   &trans
         &trans   &trans   &trans       &trans         &trans         &trans                                                         &trans   &trans   &trans   &trans   &trans   &trans
-        &trans   &trans   &kp C_PREV   &kp C_PLAY_PAUSE&kp C_NEXT     &trans                                                         &trans   &trans   &trans   &trans   &trans   &trans
+        &trans   &trans   &kp C_PREV   &kp C_PLAY_PAUSE &kp C_NEXT     &trans                                                         &trans   &trans   &trans   &trans   &trans   &trans
         &trans   &trans   &kp K_VOL_DN &trans       &kp K_VOL_UP   &trans                                                         &trans   &trans   &trans   &trans   &trans   &trans
         &trans   &trans   &trans       &trans         &trans         &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
         &trans   &trans   &trans       &trans         &trans                  &trans   &trans   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans
+            >;
+        };
+        MAGIC_LAYER {
+            bindings = <
+        &bootloader   &none             &none             &none             &none                                                                                                            &none   &none   &none   &none   &bootloader
+        &none         &none             &none             &none             &none             &none                                                                                  &none   &none   &none   &none   &none   &none
+        &none         &rgb_ug RGB_SPI   &rgb_ug RGB_SAI   &rgb_ug RGB_HUI   &rgb_ug RGB_BRI   &rgb_ug RGB_TOG                                                                        &none   &none   &none   &none   &none   &none
+        &none         &rgb_ug RGB_SPD   &rgb_ug RGB_SAD   &rgb_ug RGB_HUD   &rgb_ug RGB_BRD   &rgb_ug RGB_EFF                                                                        &none   &none   &none   &none   &none   &none
+        &none         &none             &none             &none             &none             &none             &bt_2   &bt_3   &none          &bt BT_CLR   &bt BT_CLR_ALL   &none   &none   &none   &none   &none   &none   &none
+        &none         &none             &none             &none             &none                               &bt_0   &bt_1   &out OUT_USB   &none        &none            &none           &none   &none   &none   &none   &none
             >;
         };
     };
