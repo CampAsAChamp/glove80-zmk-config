@@ -253,7 +253,7 @@ ZMK_HOLD_TAP(hm_r,
         &trans   &trans   &trans   &trans   &trans   &trans                                                         &kp LEFT_PARENTHESIS    &kp KP_NUM   &kp KP_EQUAL   &kp KP_SLASH   &kp KP_MULTIPLY   &trans
         &trans   &trans   &trans   &trans   &trans   &trans                                                         &kp RIGHT_PARENTHESIS   &kp KP_N7    &kp KP_N8      &kp KP_N9      &kp KP_MINUS      &trans
         &trans   &trans   &trans   &trans   &trans   &trans                                                         &kp PERCENT             &kp KP_N4    &kp KP_N5      &kp KP_N6      &kp KP_PLUS       &trans
-        &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &to 0    &trans   &trans   &trans   &kp COMMA               &kp KP_N1    &kp KP_N2      &kp KP_N3      &kp KP_ENTER      &trans
+        &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &to BASE_LAYER    &trans   &trans   &trans   &kp COMMA               &kp KP_N1    &kp KP_N2      &kp KP_N3      &kp KP_ENTER      &trans
         &trans   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans   &trans                           &kp KP_N0    &kp KP_N0      &kp KP_DOT     &kp KP_ENTER      &trans
             >;
         };
@@ -268,7 +268,7 @@ ZMK_HOLD_TAP(hm_r,
         &trans   &trans   &trans       &trans         &trans                  &trans   &trans   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans
             >;
         };
-        
+
         MAGIC_LAYER {
             bindings = <
         &bootloader   &none             &none             &none             &none                                                                                                            &none   &none   &none   &none   &bootloader
