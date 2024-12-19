@@ -235,6 +235,7 @@ ZMK_HOLD_TAP(hm_r,
         &kp MEH     &kp HYPER       &trans         &trans       &trans                    &lt SYMBOL_LAYER SPACE   &kp DEL   &kp LS(LC(LG(LA(ENTER))))   &kp LS(LC(LG(LA(S))))                      &kp ENTER   &kp BSPC              &trans         &trans         &trans        &trans             &sk RGUI
             >;
         };
+
         SYMBOL_LAYER {
             bindings = <
         &trans   &trans     &trans   &trans   &trans                                                                                   &trans      &trans     &trans      &trans     &trans
@@ -245,6 +246,7 @@ ZMK_HOLD_TAP(hm_r,
         &trans   &trans     &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans   &kp LA(BSPC)                   &trans      &trans     &trans      &trans     &trans
             >;
         };
+
         NUMBER_LAYER {
             bindings = <
         &trans   &trans   &trans   &trans   &trans                                                                                          &trans       &trans         &trans         &trans            &trans
@@ -255,6 +257,7 @@ ZMK_HOLD_TAP(hm_r,
         &trans   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans   &trans                           &kp KP_N0    &kp KP_N0      &kp KP_DOT     &kp KP_ENTER      &trans
             >;
         };
+
         MEDIA_LAYER {
             bindings = <
         &trans   &trans   &trans       &trans         &trans                                                                                 &trans   &trans   &trans   &trans   &trans
@@ -265,6 +268,7 @@ ZMK_HOLD_TAP(hm_r,
         &trans   &trans   &trans       &trans         &trans                  &trans   &trans   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans
             >;
         };
+        
         MAGIC_LAYER {
             bindings = <
         &bootloader   &none             &none             &none             &none                                                                                                            &none   &none   &none   &none   &bootloader
