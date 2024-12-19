@@ -118,14 +118,14 @@ ZMK_HOLD_TAP(hm_r,
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LPAR>, <&kp LBRC>, <&kp LBRC>;
+            bindings = <&kp LPAR>, <&kp LBRC>, <&kp LBKT>;
         };
 
         td_right_braces: td_right_braces {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp RPAR>, <&kp RBRC>, <&kp RBRC>;
+            bindings = <&kp RPAR>, <&kp RBRC>, <&kp RBKT>;
         };
     };
 };
@@ -218,7 +218,6 @@ ZMK_HOLD_TAP(hm_r,
     };
 #endif
 };
-
 
 /* Automatically generated keymap */
 / {
