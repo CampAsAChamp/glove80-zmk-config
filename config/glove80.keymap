@@ -238,7 +238,7 @@ ZMK_HOLD_TAP(hm_r,
         &kp TAB     &kp Q           &kp W          &kp E                &kp R           &kp T                                                                                                       &kp Y    &kp U           &kp I                    &kp O          &kp P              &kp BSLH
         &lt MEDIA_LAYER ESC      &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D         &hm_l LSHFT F   &kp G                                                                                                       &kp H    &hm_r RSHFT J   &hm_r LGUI K             &hm_r LALT L   &hm_r LCTRL SEMI   &kp SQT
         &td_caps    &mt MEH Z       &mt HYPER X         &kp C                &kp V           &kp B    &kp LG(SPACE)               &trans     &trans   &magic MAGIC_LAYER BASE_LAYER   &trans    &trans   &kp N    &kp M           &lt SYMBOL_LAYER COMMA   &kp DOT        &mt RCMD FSLH           &td_caps
-        &kp MEH     &kp HYPER       &trans         &trans       &trans                    &lt SYMBOL_LAYER SPACE   &kp DEL   &kp LS(LC(LG(LA(ENTER))))   &kp LS(LC(LG(LA(S))))                      &kp ENTER   &kp BSPC              &trans         &trans         &kp LEFT_BRACKET        &kp RIGHT_BRACKET             &trans
+        &kp MEH     &kp HYPER       &trans         &kp LPAR       &kp RPAR                    &lt SYMBOL_LAYER SPACE   &kp DEL   &kp LS(LC(LG(LA(ENTER))))   &kp LS(LC(LG(LA(S))))                      &kp ENTER   &kp BSPC              &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET        &kp RIGHT_BRACKET             &trans
             >;
         };
 
