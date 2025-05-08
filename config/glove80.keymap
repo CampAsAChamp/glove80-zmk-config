@@ -117,7 +117,7 @@ ZMK_HOLD_TAP(hm_r,
         };
 
         hm_r: hm_r {
-            compatible = "zmk,behavior-hold-tap"
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
